@@ -1,0 +1,11 @@
+{
+  "name": "my-home",
+  "version": "1.0.0",
+  "author": "Julien Giovaresco <dev@giovaresco.fr>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-java": "^1.0.1"
+  }
+}
