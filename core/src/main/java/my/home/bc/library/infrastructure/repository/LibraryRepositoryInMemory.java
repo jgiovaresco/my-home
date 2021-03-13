@@ -18,4 +18,15 @@ public class LibraryRepositoryInMemory implements LibraryRepository {
     public Mono<Boolean> add(Library library) {
         return Mono.just(storage.add(library));
     }
+
+    @Override
+    public Mono<Library> get(String id) {
+        var found = storage.stream().filter(library -> library.getId().equals(id)).findFirst();
+        return Mono.justOrEmpty(found);
+    }
+
+    @Override
+    public Mono<Library> getByOwnerId(String ownerId) {
+        return Mono.justOrEmpty(storage.stream().filter(library -> library.getOwnerId().equals(ownerId)).findFirst());
+    }
 }
