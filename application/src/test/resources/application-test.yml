@@ -1,0 +1,7 @@
+auth0:
+  audience: "audience"
+  issuer-uri: "issuer-uri"
+
+spring:
+  main:
+    allow-bean-definition-overriding: true

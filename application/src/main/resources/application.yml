@@ -1,0 +1,23 @@
+info:
+  app:
+    version: "@project.version@"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health, info"
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_trace_param
+    include-exception: false
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${auth0.issuer-uri}
