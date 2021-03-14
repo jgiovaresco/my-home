@@ -3,6 +3,7 @@ package my.home;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import my.home.bc.account.infrastructure.spring.EnableAccountModule;
+import my.home.bc.library.infrastructure.spring.EnableLibraryModule;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableAccountModule
+@EnableLibraryModule
 public class MyHomeApplication {
 
     public static void main(String[] args) {
