@@ -4,6 +4,9 @@
   "author": "Julien Giovaresco <dev@giovaresco.fr>",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "ui"
+  ],
   "devDependencies": {
     "prettier": "^2.2.1",
     "prettier-plugin-java": "^1.0.1"
