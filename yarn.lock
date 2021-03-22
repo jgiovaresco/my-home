@@ -2357,6 +2357,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@snowpack/plugin-sass@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@snowpack/plugin-sass@npm:1.3.1"
+  dependencies:
+    execa: ^5.0.0
+    npm-run-path: ^4.0.1
+    sass: ^1.3.0
+  checksum: 4531848bc34dea7c35a7af2f0ec69c4f10874b03801d59cd95909f23a2754312f1c6946fc7a811bdacf9eb162217b5c49659d38b0bc607583bb560abf3a16521
+  languageName: node
+  linkType: hard
+
 "@snowpack/plugin-typescript@npm:^1.1.0, @snowpack/plugin-typescript@npm:^1.2.0":
   version: 1.2.1
   resolution: "@snowpack/plugin-typescript@npm:1.2.1"
@@ -3206,6 +3217,17 @@ __metadata:
   dependencies:
     core-js: ^3.8.2
   checksum: 2f1cbf50b7fe2579bde0b845b299ae4a5aec02622d49e68a0b9d854c0c02b58f97c9cab46cfa9c182f7034895e0f55638a12351d97ddbc200638c9bb8eae5900
+  languageName: node
+  linkType: hard
+
+"@storybook/preset-scss@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@storybook/preset-scss@npm:1.0.3"
+  peerDependencies:
+    css-loader: "*"
+    sass-loader: "*"
+    style-loader: "*"
+  checksum: dd73b8e0c890571e6fe730f2205614d0d187d264bf01b379c661fe8cd92065fe4e8f62ad43b310383c190c7afec04666acb3a7ccd619683c3d2c55b801277496
   languageName: node
   linkType: hard
 
@@ -6165,6 +6187,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chokidar@npm:>=2.0.0 <4.0.0, chokidar@npm:^3.4.1, chokidar@npm:^3.4.2, chokidar@npm:^3.4.3":
+  version: 3.5.1
+  resolution: "chokidar@npm:3.5.1"
+  dependencies:
+    anymatch: ~3.1.1
+    braces: ~3.0.2
+    fsevents: ~2.3.1
+    glob-parent: ~5.1.0
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.5.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: 61b3f710f9e7dc69d76f638d8b0d37bad586497444165125ca8062f7192695f35403b5f622cbd7dfdd06805201ceaba40ff90e53ea2974df9a8087861192a99b
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:^2.1.8":
   version: 2.1.8
   resolution: "chokidar@npm:2.1.8"
@@ -6185,25 +6226,6 @@ __metadata:
     fsevents:
       optional: true
   checksum: 0758dcc7c6c7ace5924cf3c68088210932d391ab41026376b0adb8e07013ac87232e029f13468dfc9ca4dd59adae62a2b7eaedebb6c4e4f0ba92cbf3ac9e3721
-  languageName: node
-  linkType: hard
-
-"chokidar@npm:^3.4.1, chokidar@npm:^3.4.2, chokidar@npm:^3.4.3":
-  version: 3.5.1
-  resolution: "chokidar@npm:3.5.1"
-  dependencies:
-    anymatch: ~3.1.1
-    braces: ~3.0.2
-    fsevents: ~2.3.1
-    glob-parent: ~5.1.0
-    is-binary-path: ~2.1.0
-    is-glob: ~4.0.1
-    normalize-path: ~3.0.0
-    readdirp: ~3.5.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  checksum: 61b3f710f9e7dc69d76f638d8b0d37bad586497444165125ca8062f7192695f35403b5f622cbd7dfdd06805201ceaba40ff90e53ea2974df9a8087861192a99b
   languageName: node
   linkType: hard
 
@@ -6943,7 +6965,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^5.0.1":
+"css-loader@npm:^5.0.1, css-loader@npm:^5.1.3":
   version: 5.1.3
   resolution: "css-loader@npm:5.1.3"
   dependencies:
@@ -15009,6 +15031,39 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"sass-loader@npm:^11.0.1":
+  version: 11.0.1
+  resolution: "sass-loader@npm:11.0.1"
+  dependencies:
+    klona: ^2.0.4
+    neo-async: ^2.6.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^4.0.0 || ^5.0.0
+    sass: ^1.3.0
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+  checksum: fdd50c6c65b4c912564e799a1a21a235ece179531ddf705ebd4b2671990118ee768da73b60ac7fe5089e9e2d1d0a2ede9b87da2c153a8d1147c2144e605093de
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.3.0, sass@npm:^1.32.8":
+  version: 1.32.8
+  resolution: "sass@npm:1.32.8"
+  dependencies:
+    chokidar: ">=2.0.0 <4.0.0"
+  bin:
+    sass: sass.js
+  checksum: d319b3d7459451b6532b492984e3cbb37381e6c6379622f668900b196c0d545f5a2c32819cf02b5405fb2ef79720fe1f8f16b7614a2fef3fb7af8dfec83a6597
+  languageName: node
+  linkType: hard
+
 "sax@npm:~1.2.4":
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
@@ -16573,6 +16628,7 @@ typescript@^4.0.0:
     "@snowpack/app-scripts-react": ^2.0.0
     "@snowpack/plugin-dotenv": ^2.0.5
     "@snowpack/plugin-react-refresh": ^2.4.0
+    "@snowpack/plugin-sass": ^1.3.1
     "@snowpack/plugin-typescript": ^1.2.0
     "@snowpack/plugin-webpack": ^2.3.0
     "@snowpack/web-test-runner-plugin": ^0.2.0
@@ -16581,6 +16637,7 @@ typescript@^4.0.0:
     "@storybook/addon-essentials": ^6.2.0-rc.3
     "@storybook/addon-links": ^6.2.0-rc.3
     "@storybook/builder-webpack5": ^6.2.0-rc.3
+    "@storybook/preset-scss": ^1.0.3
     "@storybook/react": ^6.2.0-rc.3
     "@testing-library/react": ^11.0.0
     "@types/jest": ^26.0.20
@@ -16589,11 +16646,15 @@ typescript@^4.0.0:
     "@types/snowpack-env": ^2.3.2
     "@web/test-runner": ^0.12.0
     babel-loader: ^8.2.2
+    css-loader: ^5.1.3
     jest: ^26.6.3
     prettier: ^2.0.5
     react: ^17.0.0
     react-dom: ^17.0.0
+    sass: ^1.32.8
+    sass-loader: ^11.0.1
     snowpack: ^3.0.1
+    style-loader: ^2.0.0
     typescript: ^4.0.0
   languageName: unknown
   linkType: soft
