@@ -1,4 +1,5 @@
 import '../src/_rwd.scss';
+import '../src/_colors.scss';
 import '../src/_typography.scss';
 
 export const parameters = {

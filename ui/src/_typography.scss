@@ -1,4 +1,5 @@
 @use 'rwd';
+@use 'colors';
 @use 'spacing';
 
 /* --------------------------------
@@ -47,6 +48,7 @@ Typography
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
+  color: var(--color-text);
 }
 
 h1,
@@ -54,6 +56,7 @@ h2,
 h3,
 h4,
 form legend {
+  color: var(--color-text-heading);
   margin-bottom: var(--space-xxs);
   line-height: var(--heading-line-height);
 }
@@ -97,6 +100,11 @@ p {
 }
 
 a {
+  color: var(--color-link);
+
+  &:visited {
+    color: var(--color-link-visited);
+  }
 }
 
 b,

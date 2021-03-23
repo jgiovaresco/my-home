@@ -1,0 +1,59 @@
+:root {
+  /* main colors */
+  --color-primary-darker: hsl(39, 93%, 10%);
+  --color-primary-dark: hsl(39, 93%, 27%);
+  --color-primary: hsl(39, 93%, 45%);
+  --color-primary-light: hsl(39, 93%, 65%);
+  --color-primary-lighter: hsl(39, 93%, 85%);
+
+  --color-accent-darker: hsl(219, 93%, 10%);
+  --color-accent-dark: hsl(219, 93%, 27%);
+  --color-accent: hsl(219, 93%, 45%);
+  --color-accent-light: hsl(219, 93%, 65%);
+  --color-accent-lighter: hsl(219, 93%, 85%);
+
+  // shades - generated using chroma.js - 12 steps
+  --gray-darker: hsl(0, 0%, 10%);
+  --gray-dark: hsl(0, 0%, 25%);
+  --gray: hsl(0, 0%, 46%);
+  --gray-light: hsl(0, 0%, 83%);
+  --gray-lighter: hsl(0, 0%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* feedback */
+  --color-success: #88c459;
+  --color-error: #f5414f;
+  --color-warning: #ffd137;
+
+  /* typography */
+  --color-text: var(--gray-dark);
+  --color-text-heading: var(--gray-darker);
+  --color-text-subtle: var(--gray);
+  --color-link: var(--color-accent);
+  --color-link-visited: var(--color-accent-dark);
+  --color-mark: var(--color-accent-bg);
+  --color-blockquote-border: var(--gray-lighter);
+
+  /* border */
+  --color-border: var(--gray-lighter);
+
+  /* body */
+  --color-body: var(--white);
+
+  /* forms */
+  --form-element-border: var(--color-border);
+  --form-element-border-focus: var(--color-primary);
+  --form-element-border-error: var(--color-error);
+  --form-element-bg: var(--white);
+  --form-text-placeholder: var(--gray);
+
+  /* buttons */
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-hover: var(--color-primary-light);
+  --btn-primary-active: var(--color-primary-dark);
+  --btn-primary-label: var(--white);
+
+  /* icons */
+  --color-icon-primary: var(--color-primary);
+  --color-icon-secondary: var(--color-primary-dark);
+}
