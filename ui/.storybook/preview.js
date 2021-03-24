@@ -1,6 +1,6 @@
-import '../src/_rwd.scss';
-import '../src/_colors.scss';
-import '../src/_typography.scss';
+import '../src/core/_rwd.scss';
+import '../src/core/_colors.scss';
+import '../src/core/_typography.scss';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
