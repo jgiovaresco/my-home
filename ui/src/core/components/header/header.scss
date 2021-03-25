@@ -1,0 +1,22 @@
+@use '../../spacing';
+@use '../../colors';
+
+header {
+  --app-name-color: var(--color-primary-darker);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: thin solid var(--gray-lighter);
+
+  h1.title {
+    color: var(--app-name-color);
+
+    @extend .margin-top--sm;
+    @extend .margin-bottom--sm;
+  }
+
+  .auth {}
+}
