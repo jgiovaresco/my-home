@@ -1,41 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from './pages';
 
-interface AppProps {}
+const routes = [
+  {
+    path: '/',
+    component: Home,
+  },
+];
 
-function App({}: AppProps) {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Create the counter (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          {routes.map((route) => (
+            <Route exact key={route.path} path={route.path}>
+              <route.component />
+            </Route>
+          ))}
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
