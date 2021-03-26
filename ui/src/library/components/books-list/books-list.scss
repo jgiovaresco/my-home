@@ -1,0 +1,7 @@
+@use '../../../core/grid';
+@use '../book-thumbnail/book-thumbnail';
+
+.books-list {
+  @include grid.grid();
+  @include grid.gridAuto(var(--book-thumbnail-width));
+}
