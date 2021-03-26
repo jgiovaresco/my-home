@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.scss';
-import logo from './logo.svg';
+import Logo from './logo.svg';
 
 export function Home() {
   // Create the count state.
@@ -14,7 +14,7 @@ export function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Logo />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
