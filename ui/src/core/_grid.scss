@@ -1,0 +1,94 @@
+$gap-horizontal: 10px;
+$gap-vertical: $gap-horizontal;
+$grid-columns: 12;
+
+@mixin grid {
+  // fallback for IE
+  &::before, &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  > * {
+    float: left;
+    margin-right: $gap-horizontal;
+    margin-bottom: $gap-vertical;
+  }
+
+  @supports(grid-area: auto) {
+    //CSS Grid style
+    display: grid;
+    grid-column-gap: $gap-horizontal;
+    grid-row-gap: $gap-vertical;
+
+    &::after, &::before {
+      content: none;
+    }
+
+    > * {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@mixin gridAuto($min-width, $fallback: 3) {
+  > * {
+    float: left;
+    width: calc(100%/#{$fallback} - #{$gap-horizontal});
+
+    &:nth-child(#{$fallback}n + 1) {
+      clear: both;
+    }
+  }
+
+  @supports(grid-area: auto) {
+    grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+
+    > * {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+@mixin gridAdvanced($cols...) {
+  $i: 1;
+  $span: 0;
+  @each $col in $cols {
+    > :nth-of-type(#{$i}) {
+      @if nth($col,2) == -1 {
+        $span: $grid-columns - nth($col,2) - nth($col,1);
+      } @else {
+        $span: nth($col,2) - nth($col,1);
+      }
+      width: calc( #{$span}*((100% - #{$gap-horizontal}*#{$grid-columns})/#{$grid-columns}) + (#{nth($col,1)} - 1)*#{$gap-horizontal} - 1px);
+      min-width: 0;
+    }
+    $i: $i + 1;
+  }
+
+  @supports(grid-area: auto) {
+    grid-template-columns: repeat($grid-columns, 1fr);
+
+    $i: 1;
+    @each $col in $cols {
+      > :nth-of-type(#{$i}) {
+        grid-column-start: nth($col,1);
+        grid-column-end: nth($col,2);
+        grid-row-start: nth($col,3);
+        grid-row-end: nth($col,4);
+      }
+      $i: $i + 1;
+    }
+
+    > :nth-child(n) {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
