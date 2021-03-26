@@ -1,0 +1,36 @@
+@use '../../../core/icon';
+@use '../../../core/spacing';
+
+:root {
+  --book-thumbnail-width: 150px;
+}
+
+.book-thumbnail {
+  .icon {
+    @extend .icon--xl;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--book-thumbnail-width);
+  height: 210px;
+
+  padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-xs);
+
+  border: thin solid var(--gray-light);
+  border-radius: 0.25em;
+
+  .title {
+    @extend .margin-top--sm;
+    text-align: center;
+    color: var(--color-primary-darker);
+  }
+
+  .author {
+    @extend .margin-top--sm;
+    color: var(--gray)
+  }
+}
