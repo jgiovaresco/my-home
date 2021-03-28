@@ -1,0 +1,13 @@
+@use '../../../core/spacing';
+
+.add-book-form {
+
+  .actions {
+    display: flex;
+    @extend .margin-top--sm;
+
+    button[type=submit] {
+      margin-left: auto;
+    }
+  }
+}
