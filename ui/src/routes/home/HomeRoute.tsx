@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './Home.scss';
+import './HomeRoute.scss';
 import Logo from './logo.svg';
 
-export function Home() {
+export function HomeRoute() {
   // Create the count state.
   const [count, setCount] = useState(0);
   // Create the counter (+1 every second).

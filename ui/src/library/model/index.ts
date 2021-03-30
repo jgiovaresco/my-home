@@ -1,2 +1,2 @@
-export * from './Book';
+export type { Book } from './Book';
 export * from './Book.fixtures';
