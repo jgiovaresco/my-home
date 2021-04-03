@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Book } from '../../model';
-import { Button, TextInput } from '../../../core/components';
+import { Button, TextInput } from '../../../_core/components';
 import './add-book-form.scss';
 
 export interface AddBookFormProps {

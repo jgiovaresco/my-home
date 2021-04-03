@@ -3,9 +3,9 @@ import { Provider } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
-import { Header } from './core/components';
-import { store, history } from './store';
-import { routes } from './router';
+import { Header } from './_core/components';
+import { store, history } from './_store';
+import { routes } from './_router';
 
 export function App() {
   const navItems = routes.map(({ path, label }) => ({ path, label }));

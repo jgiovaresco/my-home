@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Book } from '../../model';
 import './book-thumbnail.scss';
-import BookOpenIcon from '../../../core/assets/icons/icon-book-open.svg';
+import BookOpenIcon from '../../../_core/assets/icons/icon-book-open.svg';
 
 export interface BookThumbnailProps {
   book: Book;

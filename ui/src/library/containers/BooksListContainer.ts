@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import type { RootState } from '../../store';
+import type { RootState } from '../../_store';
 
 import { getBooks } from '../selectors';
 import { BooksList } from '../components';

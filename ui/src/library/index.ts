@@ -1,3 +1,3 @@
 export * from './containers';
-export * from './book-slice';
+export * from './library.reducer';
 export * from './routes';
