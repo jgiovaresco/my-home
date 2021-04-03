@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'connected-react-router';
 
 import { Header } from './core/components';
 import { store, history } from './store';
-import { routes } from './router-paths';
+import { routes } from './router';
 
 export function App() {
   const navItems = routes.map(({ path, label }) => ({ path, label }));
