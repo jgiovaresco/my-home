@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { BooksListContainer } from '../../../library';
+import { useAppDispatch, useAppSelector } from '../../../_store';
+import { searchBooks } from '../../api';
+import { selectBooks, selectStatus } from '../../selectors';
+import { BooksList } from '../../components';
 
 export function BooksRoute() {
-  return <BooksListContainer />;
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(searchBooks());
+  }, []);
+
+  const books = useAppSelector(selectBooks);
+  const status = useAppSelector(selectStatus);
+
+  return status === 'loading' ? <p>Loading...</p> : <BooksList books={books} />;
 }

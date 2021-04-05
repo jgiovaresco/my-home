@@ -14,6 +14,7 @@ export const store = configureStore({
 // export const store = createStore(rootReducer(history), initialState, enhancer);
 
 export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   RootState,
