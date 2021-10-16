@@ -6,29 +6,44 @@
   --inactive-item-color: var(--gray-light);
   --hover-item-color: var(--gray);
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 
-    li {
-      display: inline;
-      padding-left: var(--space-xxs);
-      padding-right: var(--space-xxs);
+  .menu {
+    display: flex;
+    align-items: center;
 
-      .active {
-        border-bottom: 2px solid var(--active-item-color);
-        color: var(--active-item-color);
-      }
+    margin-right: var(--space-lg);
 
-      a {
-        text-decoration: none;
-        color: var(--inactive-item-color);
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
 
-        &:hover {
-          color: var(--hover-item-color);
+      li {
+        display: inline;
+        padding-left: var(--space-xxs);
+        padding-right: var(--space-xxs);
+
+        .active {
+          border-bottom: 2px solid var(--active-item-color);
+          color: var(--active-item-color);
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--inactive-item-color);
+
+          &:hover {
+            color: var(--hover-item-color);
+          }
         }
       }
     }
+  }
+
+  .auth {
+
   }
 }

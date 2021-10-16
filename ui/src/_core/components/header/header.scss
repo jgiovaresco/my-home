@@ -14,8 +14,8 @@ header {
   h1.title {
     color: var(--app-name-color);
 
-    @extend .margin-top--sm;
-    @extend .margin-bottom--sm;
+    @extend .margin-top--xxs;
+    @extend .margin-bottom--xxs;
   }
 
   .auth {}
