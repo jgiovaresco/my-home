@@ -4,4 +4,5 @@ export const booksRoute = {
   path: '/books',
   label: 'Books',
   component: BooksRoute,
+  secured: true,
 };

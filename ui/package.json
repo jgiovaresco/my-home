@@ -9,6 +9,7 @@
     "storybook:build": "build-storybook"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^1.8.0",
     "@reduxjs/toolkit": "^1.6.2",
     "connected-react-router": "^6.9.1",
     "react": "^17.0.2",
