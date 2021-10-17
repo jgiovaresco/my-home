@@ -7656,6 +7656,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "axios@npm:0.23.0"
+  dependencies:
+    follow-redirects: ^1.14.4
+  checksum: 879f61022bd825da2a7ebb72410bc528683ba54c140436baa0b924b7cab02ec0919fe64a04a546f482a75f5fd570b77884f9826764a95f2fd88265e61dcb70db
+  languageName: node
+  linkType: hard
+
 "babel-jest@npm:^26.2.2":
   version: 26.6.3
   resolution: "babel-jest@npm:26.6.3"
@@ -11590,6 +11599,16 @@ __metadata:
     inherits: ^2.0.3
     readable-stream: ^2.3.6
   checksum: 42e07747f83bcd4e799da802e621d6039787749ffd41f5517f8c4f786ee967e31ba32b09f8b28a9c6f67bd4f5346772e604202df350e8d99f4141771bae31279
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.14.4":
+  version: 1.14.4
+  resolution: "follow-redirects@npm:1.14.4"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: d4ce74cf5c6f363168b97e706b914eb9ffb6bf4d4c6d8f8330b93088d9b90e566611ddbcf0e42c8ed5fd17598dfeda1d19230d3e9d6d6c6b4d1c10ec3a0b99be
   languageName: node
   linkType: hard
 
@@ -20794,6 +20813,7 @@ typescript@^4.4.4:
     "@types/react-router-dom": ^5.3.1
     "@types/snowpack-env": ^2.3.4
     "@web/test-runner": ^0.13.20
+    axios: ^0.23.0
     babel-loader: ^8.2.2
     connected-react-router: ^6.9.1
     css-loader: ^6.4.0

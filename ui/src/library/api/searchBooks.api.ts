@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import type { Books } from '../model';
-import { newBooks } from '../model';
+import { getAxiosInstance } from '../../_api';
 
 type SearchBooksError = {
   message: string;
@@ -11,6 +11,6 @@ export const searchBooks = createAsyncThunk<
   void,
   { rejectValue: SearchBooksError }
 >('books/searchBooks', async () => {
-  // call api
-  return Promise.resolve(newBooks());
+  const instance = await getAxiosInstance();
+  return instance.get<Books>('books').then((response) => response.data);
 });
