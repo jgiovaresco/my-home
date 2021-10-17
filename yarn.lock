@@ -13688,13 +13688,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"java-parser@npm:1.4.0":
-  version: 1.4.0
-  resolution: "java-parser@npm:1.4.0"
+"java-parser@npm:2.0.0":
+  version: 2.0.0
+  resolution: "java-parser@npm:2.0.0"
   dependencies:
     chevrotain: 6.5.0
     lodash: 4.17.21
-  checksum: 7849ae3fa5507f5bc08c931ca825948df037d493b28c23f7360009b7047a70ad0da54d9545eda28ed620d7bb90749ace0818c2fe6efffbbf9af08ae71952c255
+  checksum: ac2ccd448d0b5d9232927f514279edd1557cd898455d6528190ae2568303d73f53214c2977f6988d1c5c351719c69dd82c65850ba53d77d0cf0449e5b42cbe81
   languageName: node
   linkType: hard
 
@@ -15619,7 +15619,7 @@ fsevents@~2.1.2:
   resolution: "my-home@workspace:."
   dependencies:
     prettier: ^2.4.1
-    prettier-plugin-java: ^1.4.0
+    prettier-plugin-java: 1.5.0
   languageName: unknown
   linkType: soft
 
@@ -17361,14 +17361,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prettier-plugin-java@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "prettier-plugin-java@npm:1.4.0"
+"prettier-plugin-java@npm:1.5.0":
+  version: 1.5.0
+  resolution: "prettier-plugin-java@npm:1.5.0"
   dependencies:
-    java-parser: 1.4.0
+    java-parser: 2.0.0
     lodash: 4.17.21
     prettier: 2.3.1
-  checksum: 720c07db8061eba184d63d19887989e4675baeb9da0f86ff9a21af756e379392774e600e921628514d3c45de38b6f9b51cc22364f28d3527180f3f021223aaa8
+  checksum: e053f36949367deee1f99ada651a4df49d6101290ac709e58513aff23907ddf0b7496eff4305f904c4f411ddb8cea49674a482392a2d17b73e279b9bca8af1a6
   languageName: node
   linkType: hard
 
